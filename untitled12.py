@@ -14,3 +14,12 @@ titleEles = driver.find_elements_by_css_selector(".newsnow_tx_inner")
 for title in titleEles :
   print(title.text)
 
+
+
+name = driver.find_elements_by_xpath('//*[@id="ct"]/div/section[1]/div[2]/div/div[1]/div[2]/div[1]/div/div[2]/a/div[2]/div')
+names = []
+for i in name:
+  names.append(i.text)
+x = len(names)
+for i in range(0, x):
+  print(names[i])
